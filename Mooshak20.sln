@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mooshak20", "Mooshak20\Mooshak20.csproj", "{19EB96A2-7832-4B2E-815F-7AFA3F420444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mooshak20.Tests", "Mooshak20.Tests\Mooshak20.Tests.csproj", "{9A9061BE-4ABE-4D6E-BA18-E1DFFF8835F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19EB96A2-7832-4B2E-815F-7AFA3F420444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EB96A2-7832-4B2E-815F-7AFA3F420444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EB96A2-7832-4B2E-815F-7AFA3F420444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EB96A2-7832-4B2E-815F-7AFA3F420444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9061BE-4ABE-4D6E-BA18-E1DFFF8835F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9061BE-4ABE-4D6E-BA18-E1DFFF8835F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9061BE-4ABE-4D6E-BA18-E1DFFF8835F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9061BE-4ABE-4D6E-BA18-E1DFFF8835F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
