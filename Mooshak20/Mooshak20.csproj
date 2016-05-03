@@ -271,6 +271,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\Entity\" />
+    <Folder Include="Models\ViewModel\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
