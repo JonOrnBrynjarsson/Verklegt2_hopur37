@@ -1,6 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 //Hallo heimur
+//Test test test
 namespace Mooshak20
 {
 	public class BundleConfig
