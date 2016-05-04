@@ -12,6 +12,7 @@ namespace Mooshak20.Controllers
 		{
 			return RedirectToAction("Login", "Account");
 			//return View("Login");
+			//komment fra Orra!
 		}
 
 
