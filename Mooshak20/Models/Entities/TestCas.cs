@@ -1,4 +1,4 @@
-namespace Mooshak20.Models.Entity
+namespace Mooshak20.Models.Entities
 {
     using System;
     using System.Collections.Generic;
@@ -6,28 +6,25 @@ namespace Mooshak20.Models.Entity
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Submission
+    [Table("TestCases")]
+    public partial class TestCas
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Submission()
+        public TestCas()
         {
-            ErrorReports = new HashSet<ErrorReport>();
             Testruns = new HashSet<Testrun>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
+
+        public string Inputstring { get; set; }
 
         public int MilestoneID { get; set; }
 
-        [Required]
-        public byte[] Code { get; set; }
-
-        public int TestCasePassed { get; set; }
+        public bool? IsOnlyForTeacher { get; set; }
 
         public bool IsRemoved { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ErrorReport> ErrorReports { get; set; }
 
         public virtual Milestone Milestone { get; set; }
 

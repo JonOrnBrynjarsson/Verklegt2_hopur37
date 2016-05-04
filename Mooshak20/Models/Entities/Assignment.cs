@@ -1,4 +1,4 @@
-namespace Mooshak20.Models.Entity
+namespace Mooshak20.Models.Entities
 {
     using System;
     using System.Collections.Generic;
@@ -6,15 +6,14 @@ namespace Mooshak20.Models.Entity
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Courses")]
-    public partial class Cours
+    public partial class Assignment
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cours()
+        public Assignment()
         {
-            Assignments = new HashSet<Assignment>();
             ErrorReports = new HashSet<ErrorReport>();
-            UserCourseRelations = new HashSet<UserCourseRelation>();
+            GroupMembers = new HashSet<GroupMember>();
+            Milestones = new HashSet<Milestone>();
         }
 
         public int ID { get; set; }
@@ -22,19 +21,25 @@ namespace Mooshak20.Models.Entity
         [Required]
         public string Name { get; set; }
 
-        public DateTime Startdate { get; set; }
+        public DateTime? SetDate { get; set; }
 
-        public bool Isactive { get; set; }
+        public DateTime? DueDate { get; set; }
+
+        public int CourseID { get; set; }
+
+        public bool IsActive { get; set; }
 
         public bool IsRemoved { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Assignment> Assignments { get; set; }
+        public virtual Cours Cours { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ErrorReport> ErrorReports { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserCourseRelation> UserCourseRelations { get; set; }
+        public virtual ICollection<GroupMember> GroupMembers { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Milestone> Milestones { get; set; }
     }
 }

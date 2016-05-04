@@ -204,20 +204,21 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Entity\AspNetRole.cs" />
-    <Compile Include="Models\Entity\AspNetUser.cs" />
-    <Compile Include="Models\Entity\AspNetUserClaim.cs" />
-    <Compile Include="Models\Entity\AspNetUserLogin.cs" />
-    <Compile Include="Models\Entity\Assignment.cs" />
-    <Compile Include="Models\Entity\Cours.cs" />
-    <Compile Include="Models\Entity\ErrorReport.cs" />
-    <Compile Include="Models\Entity\GroupMember.cs" />
-    <Compile Include="Models\Entity\Message.cs" />
-    <Compile Include="Models\Entity\Milestone.cs" />
-    <Compile Include="Models\Entity\Submission.cs" />
-    <Compile Include="Models\Entity\TestCas.cs" />
-    <Compile Include="Models\Entity\Testrun.cs" />
-    <Compile Include="Models\Entity\UserCourseRelation.cs" />
+    <Compile Include="Models\Entities\AspNetRole.cs" />
+    <Compile Include="Models\Entities\AspNetUser.cs" />
+    <Compile Include="Models\Entities\AspNetUserClaim.cs" />
+    <Compile Include="Models\Entities\AspNetUserLogin.cs" />
+    <Compile Include="Models\Entities\Assignment.cs" />
+    <Compile Include="Models\Entities\Cours.cs" />
+    <Compile Include="Models\Entities\ErrorReport.cs" />
+    <Compile Include="Models\Entities\GroupMember.cs" />
+    <Compile Include="Models\Entities\Message.cs" />
+    <Compile Include="Models\Entities\Milestone.cs" />
+    <Compile Include="Models\Entities\Model1.cs" />
+    <Compile Include="Models\Entities\Submission.cs" />
+    <Compile Include="Models\Entities\TestCas.cs" />
+    <Compile Include="Models\Entities\Testrun.cs" />
+    <Compile Include="Models\Entities\UserCourseRelation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -286,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Entity\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>

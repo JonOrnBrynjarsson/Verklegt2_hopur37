@@ -1,4 +1,4 @@
-namespace Mooshak20.Models.Entity
+namespace Mooshak20.Models.Entities
 {
     using System;
     using System.Collections.Generic;

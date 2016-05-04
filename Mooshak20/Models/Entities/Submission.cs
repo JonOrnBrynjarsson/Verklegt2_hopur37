@@ -1,4 +1,4 @@
-namespace Mooshak20.Models.Entity
+namespace Mooshak20.Models.Entities
 {
     using System;
     using System.Collections.Generic;
@@ -6,40 +6,32 @@ namespace Mooshak20.Models.Entity
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Assignment
+    public partial class Submission
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Assignment()
+        public Submission()
         {
             ErrorReports = new HashSet<ErrorReport>();
-            GroupMembers = new HashSet<GroupMember>();
-            Milestones = new HashSet<Milestone>();
+            Testruns = new HashSet<Testrun>();
         }
 
         public int ID { get; set; }
 
+        public int MilestoneID { get; set; }
+
         [Required]
-        public string Name { get; set; }
+        public byte[] Code { get; set; }
 
-        public DateTime? SetDate { get; set; }
-
-        public DateTime? DueDate { get; set; }
-
-        public int CourseID { get; set; }
-
-        public bool IsActive { get; set; }
+        public int TestCasePassed { get; set; }
 
         public bool IsRemoved { get; set; }
-
-        public virtual Cours Cours { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ErrorReport> ErrorReports { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GroupMember> GroupMembers { get; set; }
+        public virtual Milestone Milestone { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Milestone> Milestones { get; set; }
+        public virtual ICollection<Testrun> Testruns { get; set; }
     }
 }

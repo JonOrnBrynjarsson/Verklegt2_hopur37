@@ -1,4 +1,4 @@
-namespace Mooshak20.Models.Entity
+namespace Mooshak20.Models.Entities
 {
     using System;
     using System.Collections.Generic;
@@ -6,17 +6,19 @@ namespace Mooshak20.Models.Entity
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class AspNetUserClaim
+    public partial class AspNetUserLogin
     {
-        public int Id { get; set; }
+        [Key]
+        [Column(Order = 0)]
+        public string LoginProvider { get; set; }
 
-        [Required]
-        [StringLength(128)]
+        [Key]
+        [Column(Order = 1)]
+        public string ProviderKey { get; set; }
+
+        [Key]
+        [Column(Order = 2)]
         public string UserId { get; set; }
-
-        public string ClaimType { get; set; }
-
-        public string ClaimValue { get; set; }
 
         public virtual AspNetUser AspNetUser { get; set; }
     }
