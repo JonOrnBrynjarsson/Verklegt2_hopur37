@@ -12,7 +12,7 @@ namespace Mooshak20.Models.Entities
         public Milestone()
         {
             Submissions = new HashSet<Submission>();
-            TestCases = new HashSet<TestCas>();
+            TestCases = new HashSet<TestCase>();
         }
 
         public int ID { get; set; }
@@ -39,6 +39,6 @@ namespace Mooshak20.Models.Entities
         public virtual ICollection<Submission> Submissions { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TestCas> TestCases { get; set; }
+        public virtual ICollection<TestCase> TestCases { get; set; }
     }
 }
