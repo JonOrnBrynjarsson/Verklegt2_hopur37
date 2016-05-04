@@ -30,7 +30,7 @@ namespace Mooshak20.Models.Entities
 
         public virtual Assignment Assignment { get; set; }
 
-        public virtual Cours Cours { get; set; }
+        public virtual Course Course { get; set; }
 
         public virtual Submission Submission { get; set; }
     }

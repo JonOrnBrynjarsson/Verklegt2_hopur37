@@ -210,14 +210,14 @@
     <Compile Include="Models\Entities\AspNetUserClaim.cs" />
     <Compile Include="Models\Entities\AspNetUserLogin.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
-    <Compile Include="Models\Entities\Cours.cs" />
+    <Compile Include="Models\Entities\Course.cs" />
     <Compile Include="Models\Entities\ErrorReport.cs" />
     <Compile Include="Models\Entities\GroupMember.cs" />
     <Compile Include="Models\Entities\Message.cs" />
     <Compile Include="Models\Entities\Milestone.cs" />
     <Compile Include="Models\Entities\Model1.cs" />
     <Compile Include="Models\Entities\Submission.cs" />
-    <Compile Include="Models\Entities\TestCas.cs" />
+    <Compile Include="Models\Entities\TestCase.cs" />
     <Compile Include="Models\Entities\Testrun.cs" />
     <Compile Include="Models\Entities\UserCourseRelation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -226,10 +226,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Assignment.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Layout.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -287,13 +285,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Assignment\Index.cshtml" />
-    <Content Include="Views\Assignment\Test.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\Student\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

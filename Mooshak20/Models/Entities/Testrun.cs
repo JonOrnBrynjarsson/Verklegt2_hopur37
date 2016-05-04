@@ -22,6 +22,6 @@ namespace Mooshak20.Models.Entities
 
         public virtual Submission Submission { get; set; }
 
-        public virtual TestCas TestCas { get; set; }
+        public virtual TestCase TestCase { get; set; }
     }
 }

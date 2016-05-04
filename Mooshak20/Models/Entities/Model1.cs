@@ -17,13 +17,13 @@ namespace Mooshak20.Models.Entities
 		public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
 		public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
 		public virtual DbSet<Assignment> Assignments { get; set; }
-		public virtual DbSet<Cours> Courses { get; set; }
+		public virtual DbSet<Course> Courses { get; set; }
 		public virtual DbSet<ErrorReport> ErrorReports { get; set; }
 		public virtual DbSet<GroupMember> GroupMembers { get; set; }
 		public virtual DbSet<Message> Messages { get; set; }
 		public virtual DbSet<Milestone> Milestones { get; set; }
 		public virtual DbSet<Submission> Submissions { get; set; }
-		public virtual DbSet<TestCas> TestCases { get; set; }
+		public virtual DbSet<TestCase> TestCases { get; set; }
 		public virtual DbSet<Testrun> Testruns { get; set; }
 		public virtual DbSet<UserCourseRelation> UserCourseRelations { get; set; }
 
@@ -78,20 +78,20 @@ namespace Mooshak20.Models.Entities
 				.WithRequired(e => e.Assignment)
 				.WillCascadeOnDelete(false);
 
-			modelBuilder.Entity<Cours>()
+			modelBuilder.Entity<Course>()
 				.HasMany(e => e.Assignments)
-				.WithRequired(e => e.Cours)
+				.WithRequired(e => e.Course)
 				.HasForeignKey(e => e.CourseID)
 				.WillCascadeOnDelete(false);
 
-			modelBuilder.Entity<Cours>()
+			modelBuilder.Entity<Course>()
 				.HasMany(e => e.ErrorReports)
-				.WithOptional(e => e.Cours)
+				.WithOptional(e => e.Course)
 				.HasForeignKey(e => e.CourseID);
 
-			modelBuilder.Entity<Cours>()
+			modelBuilder.Entity<Course>()
 				.HasMany(e => e.UserCourseRelations)
-				.WithRequired(e => e.Cours)
+				.WithRequired(e => e.Course)
 				.HasForeignKey(e => e.CourseID)
 				.WillCascadeOnDelete(false);
 
@@ -114,9 +114,9 @@ namespace Mooshak20.Models.Entities
 				.WithRequired(e => e.Submission)
 				.WillCascadeOnDelete(false);
 
-			modelBuilder.Entity<TestCas>()
+			modelBuilder.Entity<TestCase>()
 				.HasMany(e => e.Testruns)
-				.WithRequired(e => e.TestCas)
+				.WithRequired(e => e.TestCase)
 				.HasForeignKey(e => e.TestCaseID)
 				.WillCascadeOnDelete(false);
 		}

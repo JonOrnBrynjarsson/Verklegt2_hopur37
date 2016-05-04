@@ -22,17 +22,3 @@ select,
 textarea {
     max-width: 280px;
 }
-
-
-/*Assignment*/
-.leftPortion
-{
-	float:left;
-	width:29%;
-}
-
-.rightPortion
-{
-	float:right;
-    width:69%;
-}

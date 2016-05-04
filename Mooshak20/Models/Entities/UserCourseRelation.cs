@@ -27,6 +27,6 @@ namespace Mooshak20.Models.Entities
 
         public virtual AspNetUser AspNetUser { get; set; }
 
-        public virtual Cours Cours { get; set; }
+        public virtual Course Course { get; set; }
     }
 }
