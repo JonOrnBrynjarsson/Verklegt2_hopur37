@@ -1,6 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
-
+//Hallo heimur
 namespace Mooshak20
 {
 	public class BundleConfig
