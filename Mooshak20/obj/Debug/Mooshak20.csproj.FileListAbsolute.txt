@@ -80,3 +80,4 @@ C:\Temp\Mooshak20\Verklegt2_hopur37\Mooshak20\bin\Microsoft.Owin.Security.Micros
 C:\Temp\Mooshak20\Verklegt2_hopur37\Mooshak20\obj\Debug\Mooshak20.csprojResolveAssemblyReference.cache
 C:\Temp\Mooshak20\Verklegt2_hopur37\Mooshak20\obj\Debug\Mooshak20.dll
 C:\Temp\Mooshak20\Verklegt2_hopur37\Mooshak20\obj\Debug\Mooshak20.pdb
+sd
