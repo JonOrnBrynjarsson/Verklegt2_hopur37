@@ -11,7 +11,12 @@ namespace Mooshak20.Controllers
         // GET: Assignment
         public ActionResult Index()
         {
-			return RedirectToAction("Index", "Student");
+            return View();
+        }
+
+        public ActionResult Test()
+        {
+            return View();
         }
     }
 }
