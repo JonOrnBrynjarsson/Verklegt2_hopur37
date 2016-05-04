@@ -252,3 +252,8 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+Mooshak20.Tests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Mooshak20/bin/Mooshak20.dll
+Mooshak20/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Mooshak20/obj/Debug/Mooshak20.csprojResolveAssemblyReference.cache
+Mooshak20/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
