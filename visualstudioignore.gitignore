@@ -6,6 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+Mooshak20.csproj.FileListAbsolute.txt
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
