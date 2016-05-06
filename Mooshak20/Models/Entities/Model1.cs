@@ -4,6 +4,10 @@ namespace Mooshak20.Models.Entities
 	using System.Data.Entity;
 	using System.ComponentModel.DataAnnotations.Schema;
 	using System.Linq;
+	using System.Security.Claims;
+	using System.Threading.Tasks;
+	using Microsoft.AspNet.Identity;
+	using Microsoft.AspNet.Identity.EntityFramework;
 
 	public partial class Model1 : DbContext
 	{
@@ -11,7 +15,17 @@ namespace Mooshak20.Models.Entities
 			: base("name=Model1")
 		{
 		}
+/*
+		public ApplicationDbContext()
+            : base("DefaultConnection", throwIfV1Schema: false)
+        {
+		}
 
+		public ApplicationDbContext()
+            : base("DefaultConnection", throwIfV1Schema: false)
+        {
+		}
+*/
 		public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
 		public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
 		public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
